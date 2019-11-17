@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/realtime-weather-app/static/css/main.8785e069.chunk.css",
+    "main.js": "/realtime-weather-app/static/js/main.919073a7.chunk.js",
+    "main.js.map": "/realtime-weather-app/static/js/main.919073a7.chunk.js.map",
+    "runtime-main.js": "/realtime-weather-app/static/js/runtime-main.61e4374a.js",
+    "runtime-main.js.map": "/realtime-weather-app/static/js/runtime-main.61e4374a.js.map",
+    "static/js/2.f597053c.chunk.js": "/realtime-weather-app/static/js/2.f597053c.chunk.js",
+    "static/js/2.f597053c.chunk.js.map": "/realtime-weather-app/static/js/2.f597053c.chunk.js.map",
+    "index.html": "/realtime-weather-app/index.html",
+    "precache-manifest.23f5d4d8f1929ef7f95f75ef32e343bf.js": "/realtime-weather-app/precache-manifest.23f5d4d8f1929ef7f95f75ef32e343bf.js",
+    "service-worker.js": "/realtime-weather-app/service-worker.js",
+    "static/css/main.8785e069.chunk.css.map": "/realtime-weather-app/static/css/main.8785e069.chunk.css.map",
+    "static/media/day-clear.19e2ef13.svg": "/realtime-weather-app/static/media/day-clear.19e2ef13.svg",
+    "static/media/day-cloudy-fog.296112b1.svg": "/realtime-weather-app/static/media/day-cloudy-fog.296112b1.svg",
+    "static/media/day-cloudy.5c66b134.svg": "/realtime-weather-app/static/media/day-cloudy.5c66b134.svg",
+    "static/media/day-partially-clear-with-rain.51c7cd39.svg": "/realtime-weather-app/static/media/day-partially-clear-with-rain.51c7cd39.svg",
+    "static/media/day-snowing.dd850924.svg": "/realtime-weather-app/static/media/day-snowing.dd850924.svg",
+    "static/media/day-thunderstorm.32a450a8.svg": "/realtime-weather-app/static/media/day-thunderstorm.32a450a8.svg",
+    "static/media/humidity.8a53bb5f.svg": "/realtime-weather-app/static/media/humidity.8a53bb5f.svg",
+    "static/media/loading.bffa65e7.svg": "/realtime-weather-app/static/media/loading.bffa65e7.svg",
+    "static/media/night-clear.a99547e9.svg": "/realtime-weather-app/static/media/night-clear.a99547e9.svg",
+    "static/media/night-cloudy-fog.c78ef762.svg": "/realtime-weather-app/static/media/night-cloudy-fog.c78ef762.svg",
+    "static/media/night-cloudy.3f253148.svg": "/realtime-weather-app/static/media/night-cloudy.3f253148.svg",
+    "static/media/night-partially-clear-with-rain.3a37b82a.svg": "/realtime-weather-app/static/media/night-partially-clear-with-rain.3a37b82a.svg",
+    "static/media/night-snowing.19cb9f62.svg": "/realtime-weather-app/static/media/night-snowing.19cb9f62.svg",
+    "static/media/night-thunderstorm.5f007c77.svg": "/realtime-weather-app/static/media/night-thunderstorm.5f007c77.svg",
+    "static/media/rain.9e87705e.svg": "/realtime-weather-app/static/media/rain.9e87705e.svg",
+    "static/media/refresh.ed958a11.svg": "/realtime-weather-app/static/media/refresh.ed958a11.svg",
+    "static/media/wind.31219e76.svg": "/realtime-weather-app/static/media/wind.31219e76.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.61e4374a.js",
+    "static/js/2.f597053c.chunk.js",
+    "static/css/main.8785e069.chunk.css",
+    "static/js/main.919073a7.chunk.js"
+  ]
+}
