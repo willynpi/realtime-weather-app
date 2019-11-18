@@ -1,12 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import WeatherApp from "./WeatherApp.js";
-
+import * as serviceWorker from './serviceWorker';
 import "./styles.css";
 
-function App() {
-  return <WeatherApp />;
-}
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(<WeatherApp />, rootElement);
+
+serviceWorker.register();

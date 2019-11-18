@@ -1,11 +1,13 @@
 {
   "name": "realtime-weather-app",
+  "homepage": "https://willynpi.github.io/realtime-weather-app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@emotion/core": "^10.0.22",
     "@emotion/styled": "^10.0.23",
     "emotion-theming": "^10.0.19",
+    "gh-pages": "^2.1.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.2.0"
@@ -14,10 +16,15 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "publishConfig": {
+    "registry": "https://willynpi.github.io/realtime-weather-app/"
   },
   "browserslist": {
     "production": [
