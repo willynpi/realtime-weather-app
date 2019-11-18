@@ -1,36 +1,36 @@
 {
-  "short_name": "台灣天氣",
-  "name": "台灣即時縣市天氣",
+  "short_name": "臺灣好天氣",
+  "name": "臺灣好天氣-即時縣市天氣",
   "icons": [
     {
-      "src": "icon@48.png",
-      "sizes": "48x48",
-      "type": "image/png"
+      "src": "icon@x48.png",
+      "type": "image/png",
+      "sizes": "48 × 48"
     },
     {
       "src": "icon@96.png",
-      "sizes": "96x96",
-      "type": "image/png"
+      "type": "image/png",
+      "sizes": "96x96"
     },
     {
       "src": "icon@144.png",
-      "sizes": "144x144",
-      "type": "image/png"
+      "type": "image/png",
+      "sizes": "144x144"
     },
     {
       "src": "icon@192.png",
-      "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "sizes": "192x192"
     },
     {
       "src": "icon@512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    },
+      "type": "image/png",
+      "sizes": "512x512"
+    }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#1f2022",
   "orientation": "portrait-primary",
+  "theme_color": "#1f2022",
   "background_color": "#1f2022"
 }
