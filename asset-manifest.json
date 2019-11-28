@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/realtime-weather-app/static/css/main.8785e069.chunk.css",
-    "main.js": "/realtime-weather-app/static/js/main.86ddfa09.chunk.js",
-    "main.js.map": "/realtime-weather-app/static/js/main.86ddfa09.chunk.js.map",
+    "main.js": "/realtime-weather-app/static/js/main.76c243c2.chunk.js",
+    "main.js.map": "/realtime-weather-app/static/js/main.76c243c2.chunk.js.map",
     "runtime-main.js": "/realtime-weather-app/static/js/runtime-main.61e4374a.js",
     "runtime-main.js.map": "/realtime-weather-app/static/js/runtime-main.61e4374a.js.map",
     "static/js/2.3bec9ab0.chunk.js": "/realtime-weather-app/static/js/2.3bec9ab0.chunk.js",
     "static/js/2.3bec9ab0.chunk.js.map": "/realtime-weather-app/static/js/2.3bec9ab0.chunk.js.map",
     "index.html": "/realtime-weather-app/index.html",
-    "precache-manifest.55a0c0fd2559f789ee6c9b2e2c12a75b.js": "/realtime-weather-app/precache-manifest.55a0c0fd2559f789ee6c9b2e2c12a75b.js",
+    "precache-manifest.e7a089b8f13e8728671f0858b511e0e5.js": "/realtime-weather-app/precache-manifest.e7a089b8f13e8728671f0858b511e0e5.js",
     "service-worker.js": "/realtime-weather-app/service-worker.js",
     "static/css/main.8785e069.chunk.css.map": "/realtime-weather-app/static/css/main.8785e069.chunk.css.map",
     "static/media/day-clear.19e2ef13.svg": "/realtime-weather-app/static/media/day-clear.19e2ef13.svg",
@@ -17,6 +17,7 @@
     "static/media/day-partially-clear-with-rain.51c7cd39.svg": "/realtime-weather-app/static/media/day-partially-clear-with-rain.51c7cd39.svg",
     "static/media/day-snowing.dd850924.svg": "/realtime-weather-app/static/media/day-snowing.dd850924.svg",
     "static/media/day-thunderstorm.32a450a8.svg": "/realtime-weather-app/static/media/day-thunderstorm.32a450a8.svg",
+    "static/media/edit.33ae1541.svg": "/realtime-weather-app/static/media/edit.33ae1541.svg",
     "static/media/humidity.8a53bb5f.svg": "/realtime-weather-app/static/media/humidity.8a53bb5f.svg",
     "static/media/loading.bffa65e7.svg": "/realtime-weather-app/static/media/loading.bffa65e7.svg",
     "static/media/night-clear.a99547e9.svg": "/realtime-weather-app/static/media/night-clear.a99547e9.svg",
@@ -33,6 +34,6 @@
     "static/js/runtime-main.61e4374a.js",
     "static/js/2.3bec9ab0.chunk.js",
     "static/css/main.8785e069.chunk.css",
-    "static/js/main.86ddfa09.chunk.js"
+    "static/js/main.76c243c2.chunk.js"
   ]
 }

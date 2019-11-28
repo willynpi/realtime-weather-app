@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "32cbfe5c01d4adf8a2d11d9f363875a8",
+    "revision": "0628ec88efdba7ace616e49febf8d7b9",
     "url": "/realtime-weather-app/index.html"
   },
   {
-    "revision": "1dd998021e01cd4e7da4",
+    "revision": "a251dd06deeb495a895b",
     "url": "/realtime-weather-app/static/css/main.8785e069.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/realtime-weather-app/static/js/2.3bec9ab0.chunk.js"
   },
   {
-    "revision": "1dd998021e01cd4e7da4",
-    "url": "/realtime-weather-app/static/js/main.86ddfa09.chunk.js"
+    "revision": "a251dd06deeb495a895b",
+    "url": "/realtime-weather-app/static/js/main.76c243c2.chunk.js"
   },
   {
     "revision": "2b74ff5ef9a77ec21c94",
@@ -42,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "32a450a8eb3d385943af76f3738204b1",
     "url": "/realtime-weather-app/static/media/day-thunderstorm.32a450a8.svg"
+  },
+  {
+    "revision": "33ae15415ea9f00b0e605241ed6ec7ad",
+    "url": "/realtime-weather-app/static/media/edit.33ae1541.svg"
   },
   {
     "revision": "8a53bb5fce3d72060c0d88aac5768902",
