@@ -21,7 +21,7 @@ const Setting = styled(SettingIcon)`
   fill: ${({ theme }) => theme.textColor};
   position: absolute;
   top: 50px;
-  left: 80px;
+  left: 110px;
   width: 15px;
   height: 15px;
   cursor: pointer;
@@ -159,11 +159,11 @@ const WeatherCard = props => {
         chosenTheme, 
         switchTheme, 
         fetchData, 
-        setCurrentPage 
+        setCurrentPage,
+        currentLocation 
     } = props;
 
     const { 
-        location,
         temperature,
         weatherCode,
         wind,
@@ -176,8 +176,8 @@ const WeatherCard = props => {
 
     return (
         <WeatherWrapper>
+            <Location>{currentLocation.cityName}</Location>
             <Setting onClick={()=>setCurrentPage('WeatherSetting')}/>
-            <Location>{location}</Location>
             <Description>{comfortability}</Description>
             <ThemeSwitch onClick={switchTheme}>
                 {chosenTheme === "dark" ? "夜間模式" : "日間模式"}
@@ -211,7 +211,7 @@ const WeatherCard = props => {
                 </Detail>
             </Humidity>
 
-            <Refresh onClick={fetchData}>
+            <Refresh onClick={() => fetchData(currentLocation)}>
                 最後更新時間:
                 {new Intl.DateTimeFormat("zh-TW", {
                     hour: "numeric",

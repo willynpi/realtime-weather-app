@@ -1,9 +1,10 @@
 
 import { useState, useCallback } from "react";
 
-const fetchBasicData = () => {
+const fetchBasicData = locationName => {
+	console.log(locationName)
 	return fetch(
-	  "https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0003-001?Authorization=CWB-8F311287-293C-4300-ADEB-092399F40CB8&limit=10&locationName=臺北&parameterName="
+	  "https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0003-001?Authorization=CWB-8F311287-293C-4300-ADEB-092399F40CB8&limit=10&locationName="+locationName+"&parameterName="
 	)
 	.then(response => response.json())
 	.then(data => {
@@ -24,9 +25,9 @@ const fetchBasicData = () => {
 	});
 };
 
-const fetchExtraData = () => {
+const fetchExtraData = cityName => {
 	return fetch(
-		"https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-8F311287-293C-4300-ADEB-092399F40CB8&locationName=臺北市"
+		"https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-8F311287-293C-4300-ADEB-092399F40CB8&locationName="+cityName
 	)
 	.then(response => response.json())
 	.then(data => {
@@ -62,11 +63,11 @@ const useWeatherAPI = () => {
 	    isLoading: true
   	});
 
-	const fetchData = useCallback(() => {
-		const fetchingData = async () => {
+	const fetchData = useCallback(currentLocation => {
+		const fetchingData = async currentLocation => {
 			const [baseData, extraData] = await Promise.all([
-				fetchBasicData(),
-				fetchExtraData()
+				fetchBasicData(currentLocation.locationName),
+				fetchExtraData(currentLocation.cityName)
 			]);
 			setWeatherElement({
 				...baseData,
@@ -78,7 +79,7 @@ const useWeatherAPI = () => {
 			...prevState,
 			isLoading: true
 		}));
-		fetchingData();
+		fetchingData(currentLocation);
 	}, []);
 
   return [weatherElement, fetchData];
