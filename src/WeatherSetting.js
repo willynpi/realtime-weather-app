@@ -105,7 +105,6 @@ const WeatherSetting = props => {
 
   const handleSave = () => {
     const locationName = inputLocationRef.current.value;
-    console.log(locationName);
     if(locations.includes(locationName)) {
       setCurrentPage('WeatherCard');
       setCurrentCity(locationName);

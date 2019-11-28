@@ -69,7 +69,6 @@ const getMoment = locationName => {
 };
 
 const WeatherApp = () => {
-  console.log("--- invoke function component ---");
   const [currentCity, setCurrentCity] = useState('臺北市');
   const currentLocation = findLocation(currentCity) || {};
 
@@ -87,12 +86,10 @@ const WeatherApp = () => {
   }, [moment]);
 
   const switchTheme = () => {
-    console.log("switch");
     setChosenTheme(chosenTheme === "dark" ? "light" : "dark");
   };
   
   useEffect(() => {
-    console.log("execute function in useEffect");
     fetchData(currentLocation);
   }, [fetchData, currentLocation]);
 

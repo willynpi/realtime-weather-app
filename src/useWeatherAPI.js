@@ -2,7 +2,6 @@
 import { useState, useCallback } from "react";
 
 const fetchBasicData = locationName => {
-	console.log(locationName)
 	return fetch(
 	  "https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0003-001?Authorization=CWB-8F311287-293C-4300-ADEB-092399F40CB8&limit=10&locationName="+locationName+"&parameterName="
 	)
