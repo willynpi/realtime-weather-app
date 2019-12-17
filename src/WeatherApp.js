@@ -70,7 +70,8 @@ const getMoment = locationName => {
 
 const WeatherApp = () => {
   let initialCity = localStorage.getItem('currentCity') || '臺北市';
-  let initialShortCutList = localStorage.getItem('shortCutList').split(',') || [];
+  let initialShortCutList = localStorage.getItem('shortCutList') || [];
+  initialShortCutList = initialShortCutList.length > 0 ? initialShortCutList.split(',') : initialShortCutList;
   const [currentCity, setCurrentCity] = useState(initialCity);
   const currentLocation = findLocation(currentCity) || {};
   const [shortCutList, setShortCutList] = useState(initialShortCutList);
