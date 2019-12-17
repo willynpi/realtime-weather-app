@@ -114,9 +114,11 @@ const WeatherSetting = props => {
     if(locations.includes(locationName)) {
       setCurrentPage('WeatherCard');
       setCurrentCity(locationName);
+      localStorage.setItem('currentCity', locationName);
     } else {
       alert(`儲存失敗：您輸入的 ${locationName} 並非有效的地區。`);
     }
+
   }
 
   const handleAddShortCut = () => {
@@ -125,6 +127,7 @@ const WeatherSetting = props => {
       // setCurrentPage('WeatherCard');
       if(!shortCutList.includes(locationName)) {
         setShortCutList([...shortCutList, locationName]);
+        localStorage.setItem('shortCutList', [...shortCutList, locationName]);
       }
     } else {
       alert(`儲存失敗：您輸入的 ${locationName} 並非有效的地區。`);
@@ -150,7 +153,7 @@ const WeatherSetting = props => {
       <ButtonGroup>
         <Back onClick={()=>setCurrentPage('WeatherCard')}>返回</Back>
         <Save onClick={handleAddShortCut}>加入常關注</Save>
-        <Save onClick={handleSave}>儲存</Save>
+        <Save onClick={handleSave}>儲存為預設</Save>
       </ButtonGroup>
     </WeatherSettingWrapper>
     );

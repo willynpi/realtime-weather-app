@@ -25,9 +25,6 @@ const ListTitle = styled.div`
 
 const ShortCutList = props => {
 	const {setCurrentCity, shortCutList} = props;
-	console.log(shortCutList);
-	// const cityList = ["臺北市", "臺中市", "花蓮縣"];
-
 	return (
 		<ShortCutWrapper>
 			<ListTitle>常關注城市</ListTitle>

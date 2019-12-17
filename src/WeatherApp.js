@@ -69,9 +69,11 @@ const getMoment = locationName => {
 };
 
 const WeatherApp = () => {
-  const [currentCity, setCurrentCity] = useState('臺北市');
+  let initialCity = localStorage.getItem('currentCity') || '臺北市';
+  let initialShortCutList = localStorage.getItem('shortCutList').split(',') || [];
+  const [currentCity, setCurrentCity] = useState(initialCity);
   const currentLocation = findLocation(currentCity) || {};
-  const [shortCutList, setShortCutList] = useState([])
+  const [shortCutList, setShortCutList] = useState(initialShortCutList);
   const [chosenTheme, setChosenTheme] = useState("dark");
   const [weatherElement, fetchData] = useWeatherAPI();
   const [currentPage, setCurrentPage] = useState('WeatherCard');
@@ -117,10 +119,13 @@ const WeatherApp = () => {
           />
           )
       }
-      <ShortCutList 
-        setCurrentCity={setCurrentCity}
-        shortCutList={shortCutList}
-        />
+      {shortCutList.length > 0 && (
+        <ShortCutList 
+          setCurrentCity={setCurrentCity}
+          shortCutList={shortCutList}
+          />
+        )
+      }
       </Container>
     </ThemeProvider>
   );
