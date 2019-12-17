@@ -6,7 +6,7 @@ import WeatherCard from "./WeatherCard.js";
 import WeatherSetting from "./WeatherSetting.js";
 import sunriseAndSunsetData from "./sunrise-sunset.json";
 import { findLocation } from './utils';
-
+import ShortCutList from "./ShortCutList.js";
 
 const Container = styled.div`
   background-color: ${({ theme }) => theme.backgroundColor};
@@ -115,6 +115,7 @@ const WeatherApp = () => {
           />
           )
       }
+      <ShortCutList setCurrentCity={setCurrentCity}/>
       </Container>
     </ThemeProvider>
   );
