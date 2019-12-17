@@ -71,7 +71,7 @@ const getMoment = locationName => {
 const WeatherApp = () => {
   const [currentCity, setCurrentCity] = useState('臺北市');
   const currentLocation = findLocation(currentCity) || {};
-
+  const [shortCutList, setShortCutList] = useState([])
   const [chosenTheme, setChosenTheme] = useState("dark");
   const [weatherElement, fetchData] = useWeatherAPI();
   const [currentPage, setCurrentPage] = useState('WeatherCard');
@@ -112,10 +112,15 @@ const WeatherApp = () => {
           cityName={currentLocation.cityName}
           setCurrentCity={setCurrentCity}
           setCurrentPage={setCurrentPage} 
+          setShortCutList={setShortCutList}
+          shortCutList={shortCutList}
           />
           )
       }
-      <ShortCutList setCurrentCity={setCurrentCity}/>
+      <ShortCutList 
+        setCurrentCity={setCurrentCity}
+        shortCutList={shortCutList}
+        />
       </Container>
     </ThemeProvider>
   );

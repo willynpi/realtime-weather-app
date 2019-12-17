@@ -24,13 +24,14 @@ const ListTitle = styled.div`
 `
 
 const ShortCutList = props => {
-	const {setCurrentCity} = props;
-	const cityList = ["臺北市", "臺中市", "花蓮縣"];
+	const {setCurrentCity, shortCutList} = props;
+	console.log(shortCutList);
+	// const cityList = ["臺北市", "臺中市", "花蓮縣"];
 
 	return (
 		<ShortCutWrapper>
 			<ListTitle>常關注城市</ListTitle>
-			{cityList.map(city => (
+			{shortCutList.map(city => (
 				<CityCardWrapper onClick={() => setCurrentCity(city)}>
 				{city}
 				</CityCardWrapper>
