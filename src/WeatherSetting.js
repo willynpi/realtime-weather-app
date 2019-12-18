@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import styled from '@emotion/styled';
 import { availableLocations } from './utils';
 
@@ -106,7 +106,7 @@ const WeatherSetting = props => {
     setShortCutList
   } = props;
   const inputLocationRef = useRef(null);
-  // const [locationName, setLocationName] = useState(cityName);
+  const [listAction, setListAction] = useState(true);
 
 
   const handleSave = () => {
@@ -133,7 +133,6 @@ const WeatherSetting = props => {
       alert(`儲存失敗：您輸入的 ${locationName} 並非有效的地區。`);
     }
   }
-
   return (
     <WeatherSettingWrapper>
       <Title>設定</Title>
@@ -145,7 +144,7 @@ const WeatherSetting = props => {
         id="location"
         name="location"
       />
-      <datalist id="location-list">
+        <datalist id="location-list">
         {
         	locations.map(location => (<option value={location} key={location}/>))
         }
